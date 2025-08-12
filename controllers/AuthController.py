@@ -1,0 +1,2 @@
+class AuthCOntroller:
+    pass
