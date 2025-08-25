@@ -40,3 +40,19 @@ class BarangResponse(BarangBase):
 
     class Config:
         orm_mode = True
+
+#ini baru
+class TransaksiBase(BaseModel):
+    barang_id: int
+    jumlah: int
+    total_harga: float
+
+class TransaksiCreate(TransaksiBase):
+    pass
+
+class TransaksiResponse(TransaksiBase):
+    id: int
+    created_at: datetime
+
+    class Config:
+        orm_mode = True
