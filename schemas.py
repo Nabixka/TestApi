@@ -41,7 +41,6 @@ class BarangResponse(BarangBase):
     class Config:
         orm_mode = True
 
-#ini baru
 class TransaksiBase(BaseModel):
     barang_id: int
     jumlah: int
